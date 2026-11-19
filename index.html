@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ed6418"><meta name="description" content="Pusat Bantuan dan Pelayanan Pelanggan OtoLink.">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png">
+<title>OtoLink Care — Pusat Bantuan</title>
+<style>
+:root{--orange:#ed6418;--deep:#c94b0c;--ink:#182338;--muted:#64748b;--line:#e8edf3;--bg:#fff8f1;--green:#16834b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+button,input,select,textarea{font:inherit}button{cursor:pointer}.hero{background:linear-gradient(120deg,#e95512,#ff8a27);color:white;padding:30px 20px 62px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:340px;height:340px;border:48px solid #ffffff18;border-radius:50%;right:-130px;top:-170px}.top{max-width:1040px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:14px;position:relative;z-index:1}.brand{font-weight:900;font-size:22px;letter-spacing:-.6px}.brand span{color:#ffe1c8}.pill{border:1px solid #ffffff70;border-radius:99px;padding:7px 12px;font-size:12px;color:white;background:#ffffff15}.hero h1{max-width:1040px;margin:34px auto 8px;font-size:clamp(28px,5vw,43px);line-height:1.12;letter-spacing:-1.1px;position:relative;z-index:1}.hero p{max-width:1040px;margin:0 auto;color:#fff3e9;position:relative;z-index:1}.wrap{max-width:1040px;margin:-35px auto 50px;padding:0 18px;position:relative}.panel{background:white;border:1px solid #f0e6dc;border-radius:22px;box-shadow:0 16px 45px #5b2b1014;padding:24px;margin-bottom:18px}.intro{display:flex;justify-content:space-between;align-items:center;gap:15px}.intro h2{margin:0;font-size:21px}.intro p{margin:4px 0 0;color:var(--muted);font-size:14px}.status{font-size:12px;color:#9a4a18;background:#fff1e5;border-radius:99px;padding:7px 11px;white-space:nowrap}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}.category{border:1px solid var(--line);border-radius:15px;padding:16px 14px;background:#fff;cursor:pointer;text-align:left;transition:.18s;min-height:130px;color:var(--ink)}.category:hover,.category.active{border-color:var(--orange);background:#fff8f2;box-shadow:0 5px 16px #ed64181a}.ico{width:42px;height:42px;border-radius:13px;background:#fff0e5;color:var(--orange);display:grid;place-items:center;font-size:21px;margin-bottom:9px}.category b{display:block;font-size:15px}.category small{color:var(--muted);font-size:12px;display:block;margin-top:3px}.section-title{font-size:18px;margin:0 0 5px}.hint{color:var(--muted);font-size:13px;margin:0 0 18px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}label{font-weight:650;font-size:13px}input,select,textarea{width:100%;border:1px solid #dfe5ec;border-radius:11px;padding:12px 13px;background:white;color:var(--ink);outline:none}input:focus,select:focus,textarea:focus{border-color:var(--orange);box-shadow:0 0 0 3px #ed64181a}textarea{min-height:112px;resize:vertical}.filehint{font-size:12px;color:var(--muted)}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.btn{border:0;border-radius:11px;padding:12px 17px;font-weight:750}.primary{background:var(--orange);color:white}.primary:hover{background:var(--deep)}.secondary{background:#fff2e8;color:#b64a10}.ghost{background:#f3f5f8;color:#334155}.result{display:none;margin-top:16px;padding:16px;border:1px solid #b9e5ca;background:#f0fff5;border-radius:14px}.result strong{color:var(--green);font-size:19px}.result p{margin:5px 0;color:#315b42;font-size:13px}.support{display:grid;grid-template-columns:1fr 1fr;gap:14px}.supportbox{border:1px solid var(--line);border-radius:15px;padding:17px;display:flex;gap:13px;align-items:flex-start}.supportbox .ico{flex:none;margin:0}.supportbox h3{font-size:15px;margin:0 0 3px}.supportbox p{font-size:13px;color:var(--muted);margin:0 0 10px}.linkbtn{color:var(--orange);font-weight:750;text-decoration:none;font-size:13px}.trackrow{display:flex;gap:9px}.trackrow input{flex:1}.ticket{border:1px solid var(--line);border-radius:13px;padding:14px;margin-top:12px;display:none}.ticket h3{margin:0 0 5px;font-size:16px}.tag{display:inline-block;padding:4px 9px;border-radius:99px;background:#fff1e5;color:#a84b13;font-size:12px;font-weight:700}.ticket p{font-size:13px;color:var(--muted);margin:6px 0}.admin{display:none}.admin-list{display:grid;gap:10px}.admin-item{border:1px solid var(--line);border-radius:12px;padding:12px}.admin-item header{display:flex;justify-content:space-between;gap:10px}.admin-item p{font-size:13px;color:var(--muted);margin:7px 0}.admin-item select{max-width:230px;padding:8px}.footer{text-align:center;color:#8491a3;font-size:12px;padding:8px 15px 28px}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#182338;color:white;padding:11px 16px;border-radius:10px;display:none;z-index:5;font-size:13px;box-shadow:0 8px 25px #0002}.install{display:none}.smallnote{font-size:12px;color:#8792a2;margin-top:10px}
+@media(max-width:720px){.grid{grid-template-columns:repeat(2,1fr)}.panel{padding:18px;border-radius:18px}.formgrid,.support{grid-template-columns:1fr}.field.full{grid-column:auto}.hero{padding-top:22px}.hero h1{margin-top:27px}.intro{align-items:flex-start;flex-direction:column}.trackrow{flex-direction:column}.top{align-items:flex-start}.pill{font-size:11px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="top"><div class="brand">Oto<span>Link</span> Care</div><div style="display:flex;gap:8px"><button id="installBtn" class="pill install">＋ Pasang Aplikasi</button><span class="pill">Pusat Bantuan Resmi</span></div></div><h1>Halo, ada yang bisa kami bantu?</h1><p>Sampaikan kendala atau pertanyaan Anda. Tim pelayanan OtoLink siap membantu.</p></header>
+<main class="wrap">
+<section class="panel">
+<div class="intro"><div><h2>Pilih jenis pelayanan</h2><p>Pilih kategori yang paling sesuai dengan kebutuhan Anda.</p></div><span class="status">● Layanan pelanggan</span></div>
+<div class="grid" id="categories">
+<button class="category active" data-cat="Keluhan Rental"><span class="ico">🚘</span><b>Keluhan Rental</b><small>Masalah sewa dan kendaraan</small></button>
+<button class="category" data-cat="Keluhan Jual Beli"><span class="ico">🤝</span><b>Keluhan Jual Beli</b><small>Penjual, pembeli dan transaksi</small></button>
+<button class="category" data-cat="Layanan Mitra"><span class="ico">👥</span><b>Layanan Mitra</b><small>Bantuan untuk mitra OtoLink</small></button>
+<button class="category" data-cat="Bantuan Umum"><span class="ico">🎧</span><b>Bantuan Umum</b><small>Pertanyaan lainnya</small></button>
+</div>
+</section>
+<section class="panel" id="formPanel">
+<h2 class="section-title">Kirim pesan kepada OtoLink</h2><p class="hint">Lengkapi informasi berikut agar kami dapat menindaklanjuti laporan Anda.</p>
+<form id="complaintForm">
+<div class="formgrid">
+<div class="field"><label for="name">Nama lengkap *</label><input id="name" required maxlength="90" placeholder="Nama Anda"></div>
+<div class="field"><label for="phone">Nomor WhatsApp *</label><input id="phone" required inputmode="tel" maxlength="20" placeholder="Contoh: 081234567890"></div>
+<div class="field"><label for="email">Email (opsional)</label><input id="email" type="email" placeholder="nama@email.com"></div>
+<div class="field"><label for="transaction">Nomor transaksi / iklan (opsional)</label><input id="transaction" maxlength="60" placeholder="Masukkan nomor jika ada"></div>
+<div class="field full"><label for="subject">Judul laporan *</label><input id="subject" required maxlength="120" placeholder="Ringkas masalah atau pertanyaan Anda"></div>
+<div class="field full"><label for="message">Ceritakan kebutuhan Anda *</label><textarea id="message" required maxlength="2000" placeholder="Jelaskan kronologi atau bantuan yang Anda perlukan..."></textarea></div>
+<div class="field full"><label for="attachment">Lampiran foto / bukti (opsional)</label><input id="attachment" type="file" accept="image/*,.pdf"><span class="filehint">Maksimal 5 MB. File tidak dikirim ke server pada versi ini.</span></div>
+</div>
+<div class="actions"><button class="btn primary" type="submit">Kirim pengaduan →</button><button class="btn ghost" type="reset">Kosongkan formulir</button></div>
+<div class="result" id="submitResult" role="status"></div>
+<p class="smallnote">Dengan mengirim formulir, Anda menyetujui data yang diberikan digunakan untuk menindaklanjuti permintaan pelayanan.</p>
+</form>
+</section>
+<section class="panel">
+<h2 class="section-title">Lacak pengaduan</h2><p class="hint">Masukkan nomor tiket untuk melihat status laporan pada perangkat ini.</p>
+<div class="trackrow"><input id="trackInput" placeholder="Contoh: OTC-20261119-AB12"><button class="btn secondary" id="trackBtn">Lacak tiket</button></div>
+<div class="ticket" id="trackResult"></div>
+</section>
+<section class="panel">
+<h2 class="section-title">Butuh bantuan langsung?</h2><p class="hint">Pilih saluran komunikasi yang tersedia.</p>
+<div class="support">
+<div class="supportbox"><span class="ico">💬</span><div><h3>WhatsApp OtoLink</h3><p>Hubungi petugas pelayanan secara langsung.</p><a class="linkbtn" id="waLink" href="#" target="_blank" rel="noopener">Nomor WhatsApp belum diatur</a></div></div>
+<div class="supportbox"><span class="ico">✉️</span><div><h3>Email Pelayanan</h3><p>Kirim pertanyaan atau dokumen pendukung.</p><a class="linkbtn" id="emailLink" href="mailto:">Alamat email belum diatur</a></div></div>
+</div>
+</section>
+<section class="panel">
+<div class="intro"><div><h2>Panel pengelola (perangkat ini)</h2><p>Melihat laporan yang tersimpan di browser ini.</p></div><button class="btn ghost" id="adminToggle">Buka panel</button></div>
+<div class="admin" id="adminPanel"><div class="smallnote">Catatan: panel lokal ini bukan dashboard admin online. Data hanya tersimpan pada browser/perangkat yang digunakan.</div><div class="admin-list" id="adminList" style="margin-top:14px"></div></div>
+</section>
+</main>
+<footer class="footer">© 2026 OtoLink Care · Pusat Bantuan dan Pelayanan Pelanggan<br>otolink.id</footer><div class="toast" id="toast"></div>
+<script>
+/* KONFIGURASI: isi nomor WA dan email resmi OtoLink sebelum dipublikasikan. */
+const CONFIG={whatsapp:"",email:""};
+const KEY="otolink_care_tickets_v1";let selectedCategory="Keluhan Rental";
+const $=id=>document.getElementById(id);
+function tickets(){try{return JSON.parse(localStorage.getItem(KEY)||"[]")}catch{return[]}}
+function saveTickets(data){localStorage.setItem(KEY,JSON.stringify(data))}
+function toast(msg){$("toast").textContent=msg;$("toast").style.display="block";setTimeout(()=>$("toast").style.display="none",2600)}
+document.querySelectorAll(".category").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll(".category").forEach(x=>x.classList.remove("active"));btn.classList.add("active");selectedCategory=btn.dataset.cat}));
+function ticketId(){let d=new Date(),date=d.getFullYear()+String(d.getMonth()+1).padStart(2,"0")+String(d.getDate()).padStart(2,"0");return "OTC-"+date+"-"+Math.random().toString(36).slice(2,6).toUpperCase()}
+$("complaintForm").addEventListener("submit",e=>{e.preventDefault();let file=$("attachment").files[0];if(file&&file.size>5*1024*1024){toast("Ukuran lampiran melebihi 5 MB.");return}
+const item={id:ticketId(),category:selectedCategory,name:$("name").value.trim(),phone:$("phone").value.trim(),email:$("email").value.trim(),transaction:$("transaction").value.trim(),subject:$("subject").value.trim(),message:$("message").value.trim(),created:new Date().toISOString(),status:"Diterima",attachment:file?file.name:""};
+let data=tickets();data.unshift(item);saveTickets(data);
+$("submitResult").style.display="block";$("submitResult").innerHTML="<strong>Pengaduan tersimpan pada perangkat ini.</strong><p>Nomor tiket Anda: <b>"+item.id+"</b>. Simpan nomor ini untuk pelacakan. Untuk mengirim laporan ke petugas, gunakan WhatsApp atau email resmi yang telah diatur.</p><button class='btn secondary' type='button' id='copyTicket'>Salin nomor tiket</button>";
+$("copyTicket").onclick=()=>{navigator.clipboard?.writeText(item.id);toast("Nomor tiket disalin")};$("trackInput").value=item.id;renderAdmin();toast("Tiket berhasil dibuat.");});
+$("trackBtn").onclick=()=>{let id=$("trackInput").value.trim().toUpperCase(),item=tickets().find(x=>x.id===id),box=$("trackResult");box.style.display="block";box.innerHTML=item?`<h3>${item.id}</h3><span class="tag">${item.status}</span><p><b>${item.category}</b> · ${new Date(item.created).toLocaleString("id-ID")}</p><p>${escapeHtml(item.subject)}</p><p>${escapeHtml(item.message)}</p>`:"<p>Tiket tidak ditemukan pada perangkat ini. Pastikan nomor benar atau gunakan perangkat/browser tempat laporan dibuat.</p>"};
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+$("adminToggle").onclick=()=>{$("adminPanel").style.display=$("adminPanel").style.display==="block"?"none":"block";renderAdmin()};
+function renderAdmin(){let list=$("adminList"),data=tickets();list.innerHTML=data.length?data.map(x=>`<article class="admin-item"><header><b>${escapeHtml(x.id)} · ${escapeHtml(x.name)}</b><span class="tag">${escapeHtml(x.status)}</span></header><p>${escapeHtml(x.category)} · ${new Date(x.created).toLocaleString("id-ID")}<br>${escapeHtml(x.subject)}<br>WA: ${escapeHtml(x.phone)}</p><select data-id="${x.id}" aria-label="Ubah status tiket"><option ${x.status==="Diterima"?"selected":""}>Diterima</option><option ${x.status==="Diproses"?"selected":""}>Diproses</option><option ${x.status==="Menunggu Konfirmasi"?"selected":""}>Menunggu Konfirmasi</option><option ${x.status==="Selesai"?"selected":""}>Selesai</option></select></article>`).join(""):"<p class='hint'>Belum ada laporan tersimpan.</p>";
+list.querySelectorAll("select").forEach(s=>s.onchange=()=>{let d=tickets();let t=d.find(x=>x.id===s.dataset.id);if(t){t.status=s.value;saveTickets(d);renderAdmin();toast("Status tiket diperbarui pada perangkat ini.")}})}
+if(CONFIG.whatsapp){$("waLink").href="https://wa.me/"+CONFIG.whatsapp.replace(/\D/g,"");$("waLink").textContent="Chat WhatsApp OtoLink"}if(CONFIG.email){$("emailLink").href="mailto:"+CONFIG.email;$("emailLink").textContent=CONFIG.email}
+let deferredPrompt;window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredPrompt=e;$("installBtn").style.display="inline-block"});$("installBtn").onclick=async()=>{if(deferredPrompt){deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;$("installBtn").style.display="none"}};
+if("serviceWorker"in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(console.error));
+renderAdmin();
+</script>
+</body></html>
